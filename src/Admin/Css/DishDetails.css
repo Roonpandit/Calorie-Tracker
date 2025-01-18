@@ -54,7 +54,7 @@
     line-height: 1.4;
 }
 .dish-details .ingredient-item strong {
-    color: #007bff;
+    color: black;
 }
 
 .dish-details .ingredient-item input {
