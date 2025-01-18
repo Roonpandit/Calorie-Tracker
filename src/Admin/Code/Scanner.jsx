@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Html5QrcodeScanner } from "html5-qrcode";
 import "../Css/Scanner.css"; // Import the CSS file
-import Nav_1 from "./Nav_1";
+
 const Scanner = () => {
   const scannerRef = useRef(null);
   const [decodedText, setDecodedText] = useState("");
@@ -28,7 +28,7 @@ const Scanner = () => {
       },
       (scanError) => {
         setDecodedText(""); // Clear the decoded text if error occurs
-        setError(`Scanning error: "No Code Found"`);
+        setError(`Scanning error: Scan a valid code`);
       }
     );
 
@@ -54,16 +54,24 @@ const Scanner = () => {
   };
 
   return (
-    <>
-    <Nav_1/>
-        <div className="scanner-container">
+    <div className="scanner-container">
       <h1 className="scanner-title">QR Code Scanner</h1>
-    
+      {decodedText && (
+        <p className="decoded-text">
+          Decoded URL: <a href={decodedText} target="_blank" rel="noopener noreferrer">{decodedText}</a>
+        </p>
+      )}
+            {!scannerActive && decodedText && (
+        <button onClick={handleScanAgain} className="scan-again-button">
+          Scan Again
+        </button>
+      )}
       <div id="reader"></div>
 
+      {error && (
+        <p className="error-text">{error}</p>
+      )}
     </div>
-    </>
-
   );
 };
 
