@@ -1,0 +1,122 @@
+
+
+.qr-code-generator {
+    font-family: Arial, sans-serif;
+    background-image: url("../../assets/bg-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents repeating of the background */
+    background-position: center;
+    background-attachment: fixed; /* Fixes the background image */
+    color: #333;
+    min-height: 100vh; /* Ensures the container spans the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers the content vertically */
+}
+
+.qr-code-generator h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: black;
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px 50px 50px 50px / 30px 30px 70px 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-generator .qr-container {
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #ede3e3;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    background-image: url("../../assets/bg-6.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents repeating of the container background */
+    background-position: center;
+}
+
+.qr-code-generator .qr-container h3 {
+    font-family: Apple Chancery, cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.qr-code-generator .qr-code-wrapper {
+    display: none;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.qr-code-generator .qr-code-wrapper.show {
+    display: block;
+}
+
+.qr-code-generator .tooltip {
+    visibility: hidden;
+    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.qr-code-generator .qr-code-wrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.qr-code-generator button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #45576a;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.qr-code-generator button:hover {
+    background-color: navy;
+    color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .qr-code-generator h1 {
+        font-size: 1.5rem;
+    }
+
+    .qr-code-generator .qr-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .qr-code-generator button {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+}
