@@ -24,19 +24,18 @@
     transition: color 0.3s ease; 
   }
   
-  .Nav_1 a:hover {
-    color: navy; 
-    text-decoration: underline; 
-  }
 
   .Nav_1 .logout {
     transition: transform 0.3s ease, color 0.3s ease;
     background-color: #b40f0f;
     color: white;
     border: none;
-    font: size 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
     padding: 5px 10px;
+    font-weight: bold;
     border-radius: 5px;
+  
   }
   
   .Nav_1 .logout:hover {

@@ -10,11 +10,10 @@ function About() {
   };
 
   return (
-    <div>
+    <>
+    
+        <div>
       <div className="about-container">
-        <button className="about-close-icon" onClick={handleClose}>
-          &times;
-        </button>
         <h1 className="about-title">About Calculate Calorie</h1>
         <p className="about-description">
           Welcome to <strong>Calculate Calorie</strong>, an innovative web application designed to help users easily calculate and manage the calorie content of their favorite food dishes. Whether you're trying to make healthier food choices, tracking your calorie intake, or simply curious about the nutritional value of your meals, we’ve got you covered. Our application leverages the power of QR code scanning to provide an intuitive, real-time experience that dynamically updates calorie counts based on the dish constituents.
@@ -63,6 +62,8 @@ function About() {
         </p>
       </div>
     </div>
+    </>
+
   );
 }
 

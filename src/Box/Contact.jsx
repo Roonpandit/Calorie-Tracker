@@ -78,9 +78,6 @@ function Contact() {
   return (
     <div>
       <div className="contact-container">
-        <button className="close-icon" onClick={handleClose}>
-          &times;
-        </button>
         <h1>Contact Management</h1>
         <p>
           If you have any questions or need assistance, feel free to reach out

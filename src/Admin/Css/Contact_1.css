@@ -46,12 +46,7 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   }
   
-  .contact_1-container .input-group input:hover,
-  .contact_1-container .input-group textarea:hover {
-    box-shadow: 0 0 20px rgba(55, 47, 147, 0.5);
-    transform: scale(1.01);
-  }
-  
+
   .contact_1-container .input-group textarea {
     height: 150px;
     resize: vertical;
@@ -67,10 +62,6 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
-  .contact_1-container .submit-btn:hover {
-    background-color: #07073d;
-    transform: scale(1.05);
-  }
   
   .contact_1-container .close-icon {
     background: none;
@@ -84,10 +75,7 @@
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
-  .contact_1-container .close-icon:hover {
-    color: black;
-    transform: scale(1.2);
-  }
+
   
   @media (max-width: 768px) {
     .contact_1-container .close-icon {
@@ -102,8 +90,5 @@
       transition: color 0.3s ease, transform 0.3s ease;
     }
     
-    .contact_1-container .close-icon:hover {
-      color: black;
-      transform: scale(1.2);
-    } 
+
   }

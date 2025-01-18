@@ -1,6 +1,6 @@
 .dish-detail {
     font-family: Arial, sans-serif;
-    background-image: url("../../assests/bg-3.jpg");
+    background-image: url("../../assests/bg-3.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,18 +11,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative; /* Use fixed or absolute if needed */
+    z-index: 9999; /* Ensure it overlays other elements */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
+
 
 .dish-details {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #fff;
     padding: 30px;
+    margin-top: 20px;
     max-width: 900px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     color: #333;
     overflow: hidden;
-    background-image: url("../../assets/Bg-5.jpeg");
+    background-image: url("../../assets/Bg-5.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
