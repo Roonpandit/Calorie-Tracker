@@ -151,7 +151,7 @@ function DishList() {
         <thead>
           <tr>
             <th>Food Item</th>
-            <th>Calories</th>
+            <th>Cal</th>
             <th>Category</th>
             <th>Type</th>
             <th>Quantity</th>
@@ -171,7 +171,7 @@ function DishList() {
                   className="btns"
                   onClick={() => handleAddButtonClick(dish)}
                 >
-                  Add Dish
+                  Add
                 </button>
               </td>
             </tr>

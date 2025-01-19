@@ -1,5 +1,5 @@
 .dish-list-container {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background-color: white;
   }
@@ -10,7 +10,7 @@
   
   .dish-list-container .filters select {
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   
   .dish-list-container .dish-table {
@@ -127,7 +127,7 @@
     }
   
     .dish-list-container .calendar-popup {
-      width: 90%;
+      width: 50%;
       padding: 15px;
     }
   
@@ -144,7 +144,10 @@
     }
   
     .dish-list-container .dish-table th, .dish-table td {
-      padding: 6px;
+      padding: 2px;
+    }
+    .dish-list-container {
+    width: 100%;;
     }
   }
   
