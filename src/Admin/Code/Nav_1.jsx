@@ -1,21 +1,22 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../Box/AuthContext"; 
-import "../Css/Nav_1.css"
+import { useAuth } from "../../Box/AuthContext";
+import "../Css/Nav_1.css";
+import userLogo from "../../assets/logo-3.png";
+
 const Nav_1 = () => {
   const navigate = useNavigate();
   const { isAuthenticated, logout } = useAuth();
 
-
-const Handlelogout = () =>{
-  logout();
-  navigate("/");
-}
+  const Handlelogout = () => {
+    logout();
+    navigate("/");
+  };
   return (
     <div>
       <div className="Nav_1-middle">
         <div className="Nav_1">
-        <span>
+          <span>
             <Link to="/Home">Home</Link>
           </span>
           <span>
@@ -25,12 +26,17 @@ const Handlelogout = () =>{
             <Link to="/Contact_1">Contact</Link>
           </span>
           {isAuthenticated && (
-          <button className="logout" onClick={Handlelogout}>
-            Logout
-          </button>
-        )}        </div>
+            <button className="logout" onClick={Handlelogout}>
+              Logout
+            </button>
+          )}
+                  <span className="profile-logo">
+          <Link to="/Profile">
+            <img src={userLogo} alt="" className="profile-image" />
+          </Link>
+        </span>
+        </div>
       </div>
-
     </div>
   );
 };
