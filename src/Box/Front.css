@@ -14,10 +14,10 @@
 
   
   .button-container .front-button {
-    background-color: #007bff;
+    background: transparent;
     color: #fff;
     border: none;
-    padding: 5px 20px;
+    padding: 5px 10px;
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
@@ -25,10 +25,7 @@
     font-family: 'Times New Roman', Times, serif;
     transition: background-color 0.3s ease;
   }
-  
-  .button-container .front-button:hover {
-    background-color: navy;
-  }
+
   .fronts {
     color: white; 
     display: flex;
@@ -42,7 +39,7 @@
     z-index: 10;
   }
   .fronts-container {
-    margin-left: 20px;
+    margin-left: 5px;
   }
   
   .fronts span {
