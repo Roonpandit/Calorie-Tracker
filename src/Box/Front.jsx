@@ -140,7 +140,7 @@ const Front = () => {
           </div>
 
           <span className="profile-logo">
-                          <Link to="/Profile">
+                          <Link >
                             <img
                               src={userLogo}
                               alt=""

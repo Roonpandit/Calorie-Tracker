@@ -98,7 +98,6 @@ const Form = () => {
                         required
                     />
                 </div>
-                <h3>Items:</h3>
                 {items.map((item, index) => (
                     <div key={index}>
                         <label>Item {index + 1} Name:</label>

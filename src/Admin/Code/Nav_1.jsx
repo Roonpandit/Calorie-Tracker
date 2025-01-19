@@ -31,7 +31,7 @@ const Nav_1 = () => {
             </button>
           )}
                   <span className="profile-logo">
-          <Link to="/Profile">
+          <Link >
             <img src={userLogo} alt="" className="profile-image" />
           </Link>
         </span>
