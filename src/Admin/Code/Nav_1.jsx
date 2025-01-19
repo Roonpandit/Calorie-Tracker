@@ -19,12 +19,12 @@ const Nav_1 = () => {
           <span>
             <Link to="/Home">Home</Link>
           </span>
-          <span>
+          {/* <span>
             <Link to="/About_1">About</Link>
           </span>
           <span>
             <Link to="/Contact_1">Contact</Link>
-          </span>
+          </span> */}
           {isAuthenticated && (
             <button className="logout" onClick={Handlelogout}>
               Logout
