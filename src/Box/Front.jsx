@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 import axios from "axios";
 import "./Front.css";
+import userLogo from "../assets/logo-3.png";
+
 
 const Front = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -117,6 +119,7 @@ const Front = () => {
       <div className="front-middle">
         <h1 className="text">Kcal Calculator</h1>
         <div className="fronts">
+
           <span>
             <Link to="/About">About</Link>
           </span>
@@ -135,6 +138,16 @@ const Front = () => {
               </div>
             )}
           </div>
+
+          <span className="profile-logo">
+                          <Link to="/Profile">
+                            <img
+                              src={userLogo}
+                              alt=""
+                              className="profile-image"
+                            />
+                          </Link>
+                        </span>
         </div>
 
         <div className="front-content">
