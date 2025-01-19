@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { QRCodeCanvas } from "qrcode.react";
-import "../Css/Qr.css";
-import Nav_1 from "./Nav_1";
-const QRCodeGenerator = () => {
+import "../Css/Qr_2.css";
+import Nav_2 from "./Nav_2";
+const QRCodeGenerator_2 = () => {
   const [dishes, setDishes] = useState([]);
   const [visibleQR, setVisibleQR] = useState({});
 
@@ -28,9 +28,9 @@ const QRCodeGenerator = () => {
 
   return (
     <>
-      <Nav_1 />
-      <div class="qr-overlay">
-      <div className="qr-code-generator">
+      <Nav_2 />
+      <div class="qr_2-overlay">
+      <div className="qr_2-code-generator">
         <h1>Dish QR Codes</h1>
         {dishes.length === 0 ? (
           <div>No dishes available at the moment.</div> // Placeholder when no dishes are loaded
@@ -39,19 +39,19 @@ const QRCodeGenerator = () => {
             const qrData = `https://calculatecalorie-2.netlify.app/`; // Full URL to dish details
 
             return (
-              <div key={dish.id} className="qr-container">
+              <div key={dish.id} className="qr_2-container">
                 <h3>{dish.dishName}</h3>
                 <button onClick={() => toggleQR(dish.id)}>
                   {visibleQR[dish.id] ? "Hide QR" : "Show QR"}
                 </button>
                 <div
-                  className={`qr-code-wrapper ${
+                  className={`qr_2-code-wrapper ${
                     visibleQR[dish.id] ? "show" : ""
                   }`}
                 >
                   {/* Use QRCodeCanvas here instead of QRCode */}
                   <QRCodeCanvas value={qrData} size={256} />
-                  <Link to={`/dish/${dish.id}`} className="tooltip">
+                  <Link to={`/${dish.id}`} className="tooltip">
                     See Details
                   </Link>
                 </div>
@@ -65,4 +65,4 @@ const QRCodeGenerator = () => {
   );
 };
 
-export default QRCodeGenerator;
+export default QRCodeGenerator_2;

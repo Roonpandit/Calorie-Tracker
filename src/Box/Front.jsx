@@ -104,7 +104,7 @@ const Front = () => {
         navigate("/Home");
       } else if (user.type === "user") {
         // {for multiple users}
-        navigate("/Home_1");
+        navigate("/Home_2");
       }
     } else {
       alert("Invalid Email or Password!");

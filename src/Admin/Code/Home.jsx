@@ -6,14 +6,11 @@ import Nav_1 from './Nav_1';
 const Home = () => {
   const navigate = useNavigate(); 
 
-  const handlescan = () => {
-    navigate('/scan'); 
-  };
   const handleComboClick = () => {
-    navigate('/qr'); 
+    navigate('/add-dish'); 
   };
   const handleadddish = () => {
-    navigate('/form'); 
+    navigate('/add-combo'); 
   }; 
   return (
     <>
@@ -21,9 +18,8 @@ const Home = () => {
     <div className='home-container'>
         <h1 className="text">Kcal Calculator</h1>
       <div className="btn-d">
-        <button  onClick={handlescan}>Scan </button>
-        <button onClick={handleComboClick}>Combos</button>
-        <button  onClick={handleadddish}>Add </button>
+        <button onClick={handleComboClick}>Add Dish</button>
+        <button  onClick={handleadddish}>Add Combo</button>
       </div>
     </div>
     </>

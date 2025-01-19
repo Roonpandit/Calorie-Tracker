@@ -1,4 +1,4 @@
-.dish-details {
+.dish-details_2 {
     margin: auto;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.9); /* Slight opacity */
@@ -17,7 +17,7 @@
 }
 
 
-.dish-details h1 {
+.dish-details_2 h1 {
     margin-top: 160px;
     font-family: Apple Chancery, cursive;
     font-size: 32px;
@@ -27,20 +27,20 @@
     color: white;
 }
 
-.dish-details p {
+.dish-details_2 p {
     font-family: Apple Chancery, cursive;
     font-size: 16px;
     color: white;
 }
 
-.dish-details h2 {
+.dish-details_2 h2 {
     font-size: 24px;
     font-weight: 600;
     color: white;
     margin-bottom: 10px;
 }
 
-.dish-details .ingredient-box {
+.dish-details_2 .ingredient-box {
     background-color: #f8f9fa;
     padding: 10px;
     border-radius: 8px;
@@ -48,16 +48,16 @@
    
 }
 
-.dish-details .ingredient-item {
+.dish-details_2 .ingredient-item {
     font-size: 16px;
     color: #555;
     line-height: 1.4;
 }
-.dish-details .ingredient-item strong {
+.dish-details_2 .ingredient-item strong {
     color: black;
 }
 
-.dish-details .ingredient-item input {
+.dish-details_2 .ingredient-item input {
     width: 50px;
     margin: auto;
     padding: 2px;
@@ -65,7 +65,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.bttns {
+.dish-details_2 .bttns {
     display: flex;
     justify-content: center;
     gap: 5px;
@@ -74,7 +74,7 @@
 
 
 
-  .bttns button {
+  .dish-details_2  .bttns button {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -85,31 +85,31 @@
     transition: background-color 0.3s ease;
   }
   
-  .bttns button:hover {
+  .dish-details_2 .bttns button:hover {
     background-color: #100b6f;
   }
-.dish-details .total-calories p{
+.dish-details_2 .total-calories p{
     font-size: 18px;
     font-weight: 600;
     margin-top: 15px;
     color: #333;
 }
 
-.dish-details .note {
+.dish-details_2 .note {
     font-size: 16px;
     color: #777;
     text-align: center;
     margin-top: 20px;
 }
 
-.dish-details .error, .loading {
+.dish-details_2 .error, .loading {
     text-align: center;
     font-size: 18px;
     color: #ff4d4d;
     margin-top: 50px;
 }
 
-.dish-details .error button {
+.dish-details_2 .error button {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -121,47 +121,47 @@
     transition: background-color 0.3s ease;
 }
 
-.dish-details .error button:hover {
+.dish-details_2 .error button:hover {
     background-color: #0056b3;
 }
 
-.dish-details .loading {
+.dish-details_2 .loading {
     font-size: 20px;
     font-weight: 600;
 }
 
 @media (max-width: 768px) {
-    .dish-details {
+    .dish-details_2 {
         padding: 20px;
     }
 
-    .dish-details h1 {
+    .dish-details_2 h1 {
         font-size: 24px;
     }
 
-    .dish-details h2 {
+    .dish-details_2 h2 {
         font-size: 20px;
     }
 
-    .dish-details .ingredient-item {
+    .dish-details_2 .ingredient-item {
         padding: 12px;
     }
 
-    .dish-details .ingredient-item div {
+    .dish-details_2 .ingredient-item div {
         font-size: 14px;
     }
 
-    .dish-details .bttns {
+    .dish-details_2 .bttns {
         flex-direction: column;
         align-items: center;
     }
 
-    .dish-details .bttns button {
+    .dish-details_2 .bttns button {
         width: 100%;
         margin-bottom: 10px;
     }
 
-    .dish-details .ingredient-item input {
+    .dish-details_2 .ingredient-item input {
         width: 80px;
     }
 }

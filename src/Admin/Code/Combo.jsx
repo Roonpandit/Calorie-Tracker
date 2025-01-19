@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Nav_1 from './Nav_1';
-import "../Css/Form.css"
+import "../Css/Combo.css"
 const Form = () => {
     const [dishId, setDishId] = useState(null); // To store next dishId
     const [dishName, setDishName] = useState('');
@@ -87,7 +87,7 @@ const Form = () => {
         <>
         <Nav_1/>
         <div className='Form_1'>
-            <h1>Admin - Add Dish</h1>
+            <h1>Admin - Add Combo</h1>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label>Dish Name:</label>

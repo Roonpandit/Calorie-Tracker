@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom"; // For URL params and navigation
-import "../Css/DishDetails.css"; // Import the professional CSS file
-import Nav_1 from "./Nav_1";
+import "../Css/DishDetails_2.css"; // Import the professional CSS file
+import Nav_2 from "./Nav_2";
 
-const DishDetails = () => {
+const DishDetails_2 = () => {
   const { id } = useParams(); // Extract dish ID from URL parameters
   const [dishData, setDishData] = useState(null);
   const [error, setError] = useState(null);
@@ -78,9 +78,8 @@ const DishDetails = () => {
 
   return (
   <>
-  <Nav_1/>
-      <div className="dish-detail">
-      <div className="dish-details">
+  <Nav_2/>
+      <div className="dish-details_2">
         <h1>{dishData.dishName}</h1>
 
         <p>{dishData.description}</p>
@@ -139,10 +138,9 @@ const DishDetails = () => {
           </p>
         </div>
       </div>
-    </div>
   </>
 
   );
 };
 
-export default DishDetails;
+export default DishDetails_2;

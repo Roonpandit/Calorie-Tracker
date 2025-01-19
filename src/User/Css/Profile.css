@@ -1,0 +1,99 @@
+
+.profile-container {
+  margin: auto;
+  align-items: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight opacity */
+  padding: 15px  15px;
+  margin-top: 50px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  overflow: hidden;
+  position: relative; /* Ensure proper stacking */
+  z-index: 10; /* Stack above other elements */
+}
+
+.profile-container .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+.profile-container h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+font-size: 2.5rem;
+}
+.profile-container .DishList {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container .DishList:hover {
+  background-color: #45a049;
+}
+
+.profile-container .loading-message, .error-message {
+  color: #d9534f;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile-container .user-data-container {
+
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  
+}
+
+.profile-container .user-data-container h1 {
+  top: 0;
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.profile-container .user-data-container h2 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.profile-container .user-data-container p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.profile-container .user-data-container p strong {
+  color: black
+}
+
+@media (max-width: 768px) {
+  .profile-container .profile-container {
+    padding: 15px;
+  }
+
+  .profile-container .user-data-container {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .profile-container .DishList {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
