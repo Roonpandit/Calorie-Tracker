@@ -1,7 +1,6 @@
 /* About.css */
 .about-container {
   padding: 20px;
-  max-width: 800px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -57,20 +56,24 @@
   font-size: large;
 }
 
-.about-close-icon {
-  font-size: 2rem;
+.about-container .close-button {
+  background-color: transparent;
   color: black;
-  background: none;
+  font-size: 30px;
   border: none;
   cursor: pointer;
-  position: absolute;
-  top: 25px;
-  right: 340px;
+  padding: 0;
+  line-height: 1;
+  margin-right: 25px;
+  margin-top: 20px;
 }
 
-.about-close-icon:hover {
-  color: #007bff;
-  transition: color 0.3s ease;
+.about-container .close-button:hover {
+  color: #d32f2f;
+}
+
+.about-container .close-button:focus {
+  outline: none;
 }
 
 @media (max-width: 768px) {
@@ -90,19 +93,8 @@
     font-size: 1rem;
   }
 
-  .about-close-icon {
-    font-size: 2rem;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 25px;
-    right: 30px;
-  }
-  
-  .about-close-icon:hover {
-    color: #007bff;
-    transition: color 0.3s ease;
+  .about-container .close-button {
+    font-size: 25px;
+    margin-right: 20px;
   }
 }

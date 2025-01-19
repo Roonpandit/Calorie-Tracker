@@ -15,6 +15,7 @@ import QRCodeGenerator_2 from "./User/Code/Qr_2.jsx"
 import DishDetails_2 from './User/Code/DishDetails_2.jsx';
 import Profile from './User/Code/Profile.jsx';
 import DishList from './User/Code/DishList.jsx';
+import Dish from './Admin/Code/Dish.jsx';
 function ProtectedRoute({ children }) {
   const { isAuthenticated } = useAuth(); 
   return isAuthenticated ? children : <Navigate to="/" />;  
@@ -32,6 +33,7 @@ function App() {
                       {/* Admin Pages */}
         <Route path="/Home" element={<ProtectedRoute><Home/></ProtectedRoute>} />
         <Route path="/add-combo" element={<ProtectedRoute><Form/></ProtectedRoute>} />
+        <Route path="/add-dish" element={<ProtectedRoute><Dish/></ProtectedRoute>} />
         <Route path="/About_1" element={<ProtectedRoute><About_1/></ProtectedRoute>} />
         <Route path="/Contact_1" element={<ProtectedRoute><Contact_1/></ProtectedRoute>} />
 

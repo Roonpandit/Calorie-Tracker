@@ -1,7 +1,6 @@
 /* About.css */
 .about_1-container {
   padding: 20px;
-  max-width: 800px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -56,21 +55,24 @@
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
 }
-
-.about_1-close-icon {
-  font-size: 2rem;
+.about_1-container .close-button {
+  background-color: transparent;
   color: black;
-  background: none;
+  font-size: 30px;
   border: none;
   cursor: pointer;
-  position: absolute;
-  top: 25px;
-  right: 340px;
+  padding: 0;
+  line-height: 1;
+  margin-right: 25px;
+  margin-top: 20px;
 }
 
-.about_1-close-icon:hover {
-  color: #007bff;
-  transition: color 0.3s ease;
+.about_1-container .close-button:hover {
+  color: #d32f2f;
+}
+
+.about_1-container .close-button:focus {
+  outline: none;
 }
 
 @media (max-width: 768px) {
@@ -89,20 +91,8 @@
   .about_1-text, .about_1-list li {
     font-size: 1rem;
   }
-
-  .about_1-close-icon {
-    font-size: 2rem;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 25px;
-    right: 30px;
-  }
-  
-  .about_1-close-icon:hover {
-    color: #007bff;
-    transition: color 0.3s ease;
+  .about_1-container .close-button {
+    font-size: 25px;
+    margin-right: 20px;
   }
 }

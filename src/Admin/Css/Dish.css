@@ -1,0 +1,101 @@
+/* General styling for the Dish form */
+.dish-form-container {
+    margin: auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight opacity */
+    padding: 10px;
+    margin-top: 40px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    overflow: hidden;
+    position: relative; /* Ensure proper stacking */
+    z-index: 10; /* Stack above other elements */
+  }
+  
+  .dish-form-container h2 {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+  }
+  
+  .dish-form {
+    max-width: 600px;
+    padding: 25px ;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dish-form div {
+    margin-bottom: 10px;
+  }
+  
+  .dish-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .dish-form input[type="text"], .dish-form input[type="number"], .dish-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .dish-form input[type="text"]:focus, .dish-form input[type="number"]:focus, .dish-form select:focus {
+    border-color: #3f63d0;
+    background-color: #e8effd;
+    outline: none;
+  }
+  
+  .dish-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #214fdb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dish-form button:hover {
+    background-color: #1832b2;
+  }
+  
+  .dish-form button:focus {
+    outline: none;
+  }
+  
+  .dish-form option {
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .dish-form {
+      padding: 15px;
+    }
+  
+    .dish-form input[type="text"], .dish-form input[type="number"], .dish-form select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .dish-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

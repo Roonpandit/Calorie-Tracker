@@ -60,6 +60,10 @@ function About() {
         <p className="about-text">
           Thank you for choosing <strong>Calculate Calorie</strong>—where your health and nutritional goals are our top priority. We are constantly improving and evolving the platform to meet your needs, and we are excited for you to explore all the possibilities our application has to offer.
         </p>
+
+        <button onClick={handleClose} className="close-button">
+        &times;
+      </button>
       </div>
     </div>
     </>

@@ -2,8 +2,7 @@
     padding: 30px;
     background-color: #f4f4f4;
     margin: auto;
-    max-width: 70%;
-    margin-top: 100px;
+    margin-top: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(2, 0, 9, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -65,16 +64,24 @@
   
 
   
-  .contact-container .close-icon {
-    background: none;
+  .contact-container .close-button {
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
     border: none;
-    color: rgb(34, 32, 32);
-    position: absolute;
-    right: 215px;
-    top: 120px;
-    font-size: 29px;
     cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0;
+    line-height: 1;
+    margin-right: 25px;
+    margin-top: 28px;
+  }
+  
+  .contact-container .close-button:hover {
+    color: #d32f2f;
+  }
+  
+  .contact-container .close-button:focus {
+    outline: none;
   }
   
 
@@ -91,6 +98,9 @@
       cursor: pointer;
       transition: color 0.3s ease, transform 0.3s ease;
     }
-    
+    .contact-container .close-button {
+      font-size: 25px;
+      margin-right: 20px;
+    }
 
   }

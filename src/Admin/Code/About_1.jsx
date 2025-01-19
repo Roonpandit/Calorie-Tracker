@@ -5,7 +5,7 @@ import "../Css/About_1.css";
 function About_1() {
   const navigate = useNavigate();
 
-  const handleClose = () => {
+  const handleCloseButtonClick = () => {
     navigate("/Home");
   };
 
@@ -58,6 +58,9 @@ function About_1() {
         <p className="about_1-text">
           Thank you for choosing <strong>Calculate Calorie</strong>—where your health and nutritional goals are our top priority. We are constantly improving and evolving the platform to meet your needs, and we are excited for you to explore all the possibilities our application has to offer.
         </p>
+              <button onClick={handleCloseButtonClick} className="close-button">
+        &times;
+      </button>
       </div>
     </div>
   );

@@ -18,8 +18,8 @@ const Home = () => {
     <div className='home-container'>
         <h1 className="text">Kcal Calculator</h1>
       <div className="btn-d">
-        <button onClick={handleComboClick}>Add Dish</button>
-        <button  onClick={handleadddish}>Add Combo</button>
+        <button onClick={handleComboClick}>Dish</button>
+        <button  onClick={handleadddish}>Combo</button>
       </div>
     </div>
     </>

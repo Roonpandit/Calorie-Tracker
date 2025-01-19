@@ -121,6 +121,9 @@ function Contact_1() {
             {isLoading ? "Sending..." : "Send Message"}
           </button>
         </form>
+        <button onClick={handleClose} className="close-button">
+        &times;
+      </button>
       </div>
     </div>
   );
