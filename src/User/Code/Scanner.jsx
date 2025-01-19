@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Html5QrcodeScanner } from "html5-qrcode";
 import "../Css/Scanner.css"; // Import the CSS file
-
+import Nav_2 from "../Code/Nav_2"
 const Scanner = () => {
   const scannerRef = useRef(null);
   const [decodedText, setDecodedText] = useState("");
@@ -54,7 +54,9 @@ const Scanner = () => {
   };
 
   return (
-    <div className="scanner-container">
+    <>
+    <Nav_2/>
+   <div className="scanner-container">
       <h1 className="scanner-title">QR Code Scanner</h1>
       {decodedText && (
         <p className="decoded-text">
@@ -72,6 +74,8 @@ const Scanner = () => {
         <p className="error-text">{error}</p>
       )}
     </div>
+    </>
+ 
   );
 };
 
